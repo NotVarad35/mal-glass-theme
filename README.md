@@ -27,7 +27,7 @@ Designed with blurred backgrounds, soft gradients, and a clean dark UI.
 - Layout logic cannot be changed
 
 ## 🛠 Customization
-See `docs/customization.md`
+See [Customization Guide](customization.md)
 
 ## 📄 License
 MIT
