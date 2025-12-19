@@ -1,0 +1,220 @@
+/*
+MAL Glass Theme
+Author: NotVarad
+GitHub: https://github.com/notvarad35/mal-glass-theme
+Description: Glassmorphism dark theme for MyAnimeList lists
+*/
+
+/* ===============================
+   FONT (OWNER ONLY – MAL LIMIT)
+================================ */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+/* ===============================
+   GLOBAL BACKGROUND + BLUR
+================================ */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("https://cdn.imgchest.com/files/0a440c62aa3a.JPG") center / cover no-repeat;
+// bg-img.jpg is used here
+    filter: blur(5px) saturate(1.2);
+    transform: scale(1.1);
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: -1;
+}
+
+body {
+    font-family: "JetBrains Mono", Consolas, monospace !important;
+    overflow-x: hidden;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===============================
+   REMOVE DEFAULT WHITE UI
+================================ */
+.list-container,
+.status-menu-container,
+.list-table,
+.cover-block,
+.header,
+.list-unit,
+.list-status-title,
+.list-table-header,
+.list-table-data,
+#advanced-options,
+.list-menu-float {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* ===============================
+   GLASS CONTAINERS
+================================ */
+#column,
+.list-container {
+    backdrop-filter: blur(12px);
+    background: rgba(15, 15, 18, 0.55) !important;
+    border-radius: 18px;
+}
+
+/* ===============================
+   COVER IMAGE + ALIGNMENT
+================================ */
+.cover-block {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    margin: 40px auto 32px;
+}
+
+.cover-block .image-container {
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+.cover-block .image-container img {
+    content: url("https://cdn.imgchest.com/files/fa456706c395.png");
+// cover-art is used here
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: min(1040px, 92vw);
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+
+/* ===============================
+   TYPOGRAPHY
+================================ */
+.list-table-data,
+.list-table-header {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.data.title .link {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.3px;
+}
+
+.notes,
+.content-status,
+.smalltext,
+.data.number {
+    color: rgba(255, 255, 255, 0.55) !important;
+    font-weight: 400 !important;
+}
+
+/* ===============================
+   STATUS COLOR BARS
+================================ */
+.data.status {
+    filter: blur(0.4px);
+}
+
+.data.status.watching {
+    background: linear-gradient(180deg, #1db954, #0f7a3c) !important;
+    box-shadow: 0 0 18px rgba(29, 185, 84, 0.7);
+}
+
+.data.status.completed {
+    background: linear-gradient(180deg, #4c7cff, #263a8f) !important;
+}
+
+.data.status.onhold {
+    background: linear-gradient(180deg, #ffd86a, #b58b1c) !important;
+}
+
+.data.status.dropped {
+    background: linear-gradient(180deg, #ff5c5c, #7a1f1f) !important;
+}
+
+.data.status.plantowatch {
+    background: linear-gradient(180deg, #9a9a9a, #5a5a5a) !important;
+}
+
+/* ===============================
+   ROW HOVER SPOTLIGHT
+================================ */
+.list-table-data:hover {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow:
+        inset 0 0 0 9999px rgba(255, 255, 255, 0.02),
+        0 0 40px rgba(255, 255, 255, 0.08);
+    transition: all 0.25s ease;
+}
+
+/* ===============================
+   DISABLE PROGRESS GLOW
+================================ */
+.data.progress {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* ===============================
+   STATUS MENU (TOP TABS)
+================================ */
+.status-button {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-weight: 600;
+}
+
+.status-button.on {
+    color: #ffffff !important;
+}
+
+.status-button::after {
+    background: linear-gradient(90deg, #1db954, #4cff9a) !important;
+    height: 3px !important;
+}
+
+/* ===============================
+   TABLE HEADER (BLACK + BLUE)
+================================ */
+.list-table .list-table-header,
+.list-table .list-table-header .header-title {
+    background: rgba(5, 5, 8, 0.85) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.list-table .list-table-header .header-title,
+.list-table .list-table-header .header-title .link,
+.list-table .list-table-header .sort-icon {
+    color: #8fd3ff !important;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.list-table .list-table-header .header-title {
+    background-image: none !important;
+}
+
+/* ===============================
+   FLOATING MENU
+================================ */
+.list-menu-float .icon-menu {
+    backdrop-filter: blur(12px);
+    background: rgba(20, 20, 24, 0.6) !important;
+}
+
+/* ===============================
+   SPACING FIX
+================================ */
+.status-menu-container {
+    margin-top: 24px;
+}
