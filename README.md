@@ -12,6 +12,7 @@ Designed with blurred backgrounds, soft gradients, and a clean dark UI.
 - Hover spotlight effects
 
 ## 📸 Screenshots
+![screenshot1](https://github.com/user-attachments/assets/b00fd723-40d0-4454-b8c9-d468290aafe6)
 
 
 ## 🚀 Installation
