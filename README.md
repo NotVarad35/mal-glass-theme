@@ -10,10 +10,12 @@ Designed with blurred backgrounds, soft gradients, and a clean dark UI.
 - JetBrains Mono typography
 - Custom edit modal styling
 - Hover spotlight effects
-
+<details>
+<summary>Preview</summary>
+  
 ## 📸 Screenshots
 ![screenshot1](https://github.com/user-attachments/assets/b00fd723-40d0-4454-b8c9-d468290aafe6)
-
+</details>
 
 ## 🚀 Installation
 1. Open your MyAnimeList list
@@ -31,3 +33,6 @@ See [Customization Guide](customization.md)
 
 ## 📄 License
 MIT
+
+## Credits
+Created and maintained by NotVarad.
