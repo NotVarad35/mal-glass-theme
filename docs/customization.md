@@ -3,8 +3,8 @@
 This document explains how to customize **MAL Glass Theme** to match your personal preferences.
 All customization is done by editing `theme.css`.
 
-> ⚠️ Note  
-> MyAnimeList only allows **CSS-based customization**. JavaScript, HTML changes, and external fonts for visitors are restricted.
+##⚠️ Note  
+##MyAnimeList only allows **CSS-based customization**. JavaScript, HTML changes, and external fonts for visitors are restricted.
 
 ---
 
@@ -42,4 +42,5 @@ font-family: "JetBrains Mono", Consolas, monospace;
 .list-container {
     backdrop-filter: blur(12px);
 }
+
 
